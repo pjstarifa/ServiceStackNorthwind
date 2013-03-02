@@ -8,9 +8,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStack.Northwind.ServiceInterface", "ServiceStack.Northwind.ServiceInterface\ServiceStack.Northwind.ServiceInterface.csproj", "{A724F80D-4341-4ECA-AC43-CF84A3F03779}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{90DDD013-10B5-4D06-815B-D67B8AC3C632}"
-	ProjectSection(SolutionItems) = preProject
-		ReadMe.md = ReadMe.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{56FD1C4A-1D8A-4E0D-A22F-55D5792DCD44}"
 	ProjectSection(SolutionItems) = preProject
