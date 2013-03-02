@@ -1,0 +1,44 @@
+﻿            <!-- Customers -->
+            <div class="alert span2">
+                <h3>Customers</h3>
+                <form name="Customers">
+                    <label>
+                        Customer ID<br />
+                        <input type="text" ng-model="dto.Tables.Customers.CustomerID" class="input-medium"></label>
+                    <label>
+                        Company Name<br />
+                        <input type="text" ng-model="dto.Tables.Customers.CompanyName" class="input-medium"></label>
+                    <label>
+                        Contact Name<br />
+                        <input type="text" ng-model="dto.Tables.Customers.ContactName" class="input-medium"></label>
+                    <label>
+                        Contact Title<br />
+                        <input type="text" ng-model="dto.Tables.Customers.ContactTitle" class="input-medium"></label>
+                    <label>
+                        Address<br />
+                        <input type="text" ng-model="dto.Tables.Customers.Address" class="input-medium"></label>
+                    <label>
+                        City<br />
+                        <input type="text" ng-model="dto.Tables.Customers.City" class="input-medium"></label>
+                    <label>
+                        Region<br />
+                        <input type="text" ng-model="dto.Tables.Customers.Region" class="input-medium"></label>
+                    <label>
+                        Postal Code<br />
+                        <input type="text" ng-model="dto.Tables.Customers.PostalCode" class="input-medium"></label>
+                    <label>
+                        Country<br />
+                        <input type="text" ng-model="dto.Tables.Customers.Country" class="input-medium"></label>
+                    <label>
+                        Phone<br />
+                        <input type="text" ng-model="dto.Tables.Customers.Phone" class="input-medium"></label>
+                    <label>
+                        Fax<br />
+                        <input type="text" ng-model="dto.Tables.Customers.Fax" class="input-medium"></label>
+                    <a class="btn" ng-click="updateCustomers()">Save</a>
+                    <a class="btn" ng-click="cancelCustomers()">Cancel</a>
+                    <a class="btn" ng-click="deleteCustomers()">Delete</a>
+                    <a class="btn" ng-click="newCustomers()">New</a>
+                </form>
+            </div>
+

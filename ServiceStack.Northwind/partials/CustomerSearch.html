@@ -1,0 +1,22 @@
+﻿    <input ng-model="name" />
+        <a class="btn" ng-click="searchCustomers(name)">Search</a>
+        <a class="btn" ng-click="allCustomers()">All</a>
+        <a class="btn" ng-click="insertCustomer()">Insert</a>
+
+        <div ng-grid>
+        </div>
+
+        <div>Customers: {{dto.Customers.Length}}</div>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Company Name</th>
+                <th>Contact Name</th>
+            </tr>
+            <tr ng-repeat="c in dto.Customers">
+                <td>{{c.Id}}</td>
+                <td>{{c.CompanyName}}</td>
+                <td>{{c.ContactName}}</td>
+            </tr>
+
+        </table>

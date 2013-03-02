@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Customer Search Dto</title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="Content/toastr.css" rel="stylesheet" />
+    <link href="Content/angular-ui.css" rel="stylesheet" />
+    <link href="Content/select2.css" rel="stylesheet" />
+    <link href="Content/themes/base/jquery-ui.css" rel="stylesheet" />
+</head>
+<body ng-controller="mainCtrl" ng-cloak>
+
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+
+                <!-- Be sure to leave the brand out there if you want it shown -->
+                <a class="brand" href="#">ServiceStack.Northwind</a>
+
+                <!-- Everything you want hidden at 940px or less, place within here -->
+                <div class="nav-collapse collapse">
+                    <!-- .nav, .navbar-search, .navbar-form, etc -->
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="/index.html" when-active>Home</a>
+                        </li>
+                        <li><a href="#/CustomerSearch" when-active>Customer Search</a></li>
+                        <li><a href="#/CustomerEdit" when-active>Customer Edit</a></li>
+                        <li><a href="/metadata?a=b" target="_new" when-active>MetaData</a></li>
+                        <li><a href="/elmah.axd?a=b" target="_new" when-active>Error Log</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="span10">
+        <hello-world name="Peter J Smith"></hello-world>
+        <a title="Easiest. Binding. Ever!" ui-jq="tooltip" ui-options="{placement:'right'}">Hover over me for static Tooltip</a>
+
+        <input type="text" ng-model="date" ui-date />
+        <ul class="unstyled">
+            <li>Selected Date: {{ date }}</li>
+            <li>Formatted Date: {{ date | date: 'mediumDate'}}</li>
+            <li>Selected Month: {{ date.getMonth() }}</li>
+        </ul>
+    </div>
+
+    <ng-view class="span10"></ng-view>
+
+
+
+    <!-- Third Party Scripts -->
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/jquery-ui-1.10.0.min.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="Scripts/toastr-1.1.5.js"></script>
+    <script src="Scripts/angular-ui.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <!-- App Scripts -->
+    <script src="Scripts/app/app.js"></script>
+</body>
+</html>
